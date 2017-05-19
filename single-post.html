@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogbook</title>
+	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+	<script>
+	 tinymce.init({
+    selector: '#mytextarea',
+    menubar: false,
+    plugins: 'image'
+ 	 });
+ 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/pagePiling/jquery.pagepiling.css" />
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>	
+	<div class="top-nav">
+		<div class="content">	
+			
+			<a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle class="hamburger"></a>
+			<div id="offcanvas-slide" uk-offcanvas>
+				<div class="uk-offcanvas-bar nav-left">
+					<div class="uk-text-center">
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img src="userpic.jpg"></img>
+							<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+							<p class="uk-h4 uk-margin-remove">
+								<button class="uk-button uk-button-primary">View Blog</button>
+							</p>
+							</div>
+						</div>
+
+						<h3><b>Hello, Jessica!</b></h3>
+						<button class="uk-button uk-button-primary newpost-btn" href="#modal-full" uk-toggle><span uk-icon="icon: plus"></span>New Post</button>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="blogbook-logo.png"></img>
+				<h1>blogbook</h1>
+			</div>
+			<div class="search">
+				<div>
+					<a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+					<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+						<form class="uk-search uk-search-navbar uk-width-1-1">
+							<input class="uk-search-input" type="search" placeholder="blogs, tags, etc..." autofocus>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-wrapper">
+		<div class="main-content">	
+
+		
+			
+			
+
+
+		</div>
+	</div>
+</body>
+<div id="modal-full" class="uk-modal-container" uk-modal bg-close:false>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Create Post</h2>
+      
+        <form method="post">
+        <input class="uk-input" type="text" placeholder="Title">
+    <textarea id="mytextarea">Hello, World!</textarea>
+  </form>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/responsiveSlider/responsiveslides.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/customScript.js"></script>
+
+
+
+</html>

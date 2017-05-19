@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogbook</title>
+	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+	<script>
+	 tinymce.init({
+    selector: '#mytextarea',
+    menubar: false,
+    plugins: 'image'
+ 	 });
+ 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/pagePiling/jquery.pagepiling.css" />
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>	
+	<div class="top-nav">
+		<div class="content">	
+			
+			<a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle class="hamburger"></a>
+			<div id="offcanvas-slide" uk-offcanvas>
+				<div class="uk-offcanvas-bar nav-left">
+					<div class="uk-text-center">
+						<div class="uk-inline-clip uk-transition-toggle">
+							<img src="userpic.jpg"></img>
+							<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+							<p class="uk-h4 uk-margin-remove">
+								<button class="uk-button uk-button-primary">View Blog</button>
+							</p>
+							</div>
+						</div>
+
+						<h3><b>Hello, Jessica!</b></h3>
+						<button class="uk-button uk-button-primary newpost-btn" href="#modal-full" uk-toggle><span uk-icon="icon: plus"></span>New Post</button>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="blogbook-logo.png"></img>
+				<h1>blogbook</h1>
+			</div>
+			<div class="search">
+				<div>
+					<a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+					<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+						<form class="uk-search uk-search-navbar uk-width-1-1">
+							<input class="uk-search-input" type="search" placeholder="blogs, tags, etc..." autofocus>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-wrapper">
+		<div class="main-content">	
+			<div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light profile-container">
+				<div class="info-left">
+					<div class="profilepic">	
+						<img src="userpic.jpg"></img>
+					</div>
+					<div class="profile-info">
+						<h3 class="uk-card-title profile-name">Jessica Gavino</h3> 
+						<div class="user-location"><span uk-icon="icon: location"></span> MNL, Philippines</div>
+						<hr class="uk-divider-small name-divider">
+						<p class="bio">Copy-editor, Ninja Writer and wine-drinker. Reader and beach-walker. I used to live in Hong Kong and London but I’m now at home in the North East of England.</p>
+						<p class="member-date"> Member since 2009 </p>
+						<div class="social-media">	
+							<a href="" class="uk-icon-button uk-margin-small-right profile-icon" uk-icon="icon: twitter"></a>
+							<a href="" class="uk-icon-button  uk-margin-small-right profile-icon" uk-icon="icon: facebook"></a>
+							<a href="" class="uk-icon-button profile-icon" uk-icon="icon: google-plus"></a>
+						</div>	
+					</div>
+				</div>
+				<div class="info-right">
+					<button class="uk-button uk-button-default follow-btn">
+							<span uk-icon="icon: plus" class="follow-icon"></span>Follow
+					</button>
+					<button class="uk-button uk-button-default unfollow-btn">
+					<span uk-icon="icon: minus" class="unfollow-icon"></span>Unfollow
+					</button>
+
+
+				</div>	
+			</div>
+			
+
+<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" style="margin-left: 1px;" uk-grid>
+<div class="uk-card uk-card-default uk-card-body post-body">
+    <h3 class="uk-card-title post-title">This is a sample of a long header. Is there enough space?</h3>
+    <p class="post-par truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="uk-card uk-card-default uk-card-body">
+    <h3 class="uk-card-title">Default</h3>
+    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="uk-card uk-card-default uk-card-body">
+    <h3 class="uk-card-title">Default</h3>
+    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+		</div>
+	</div>
+</body>
+<div id="modal-full" class="uk-modal-container" uk-modal bg-close:false>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Create Post</h2>
+      
+        <form method="post">
+        <input class="uk-input" type="text" placeholder="Title">
+    <textarea id="mytextarea">Hello, World!</textarea>
+  </form>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/responsiveSlider/responsiveslides.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/customScript.js"></script>
+
+
+
+</html>

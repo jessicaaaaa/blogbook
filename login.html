@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogbook</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/pagePiling/jquery.pagepiling.css" />
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="custom.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="left-container">
+		<!-- <div id="pagepiling" style="z-index: -1">
+			<div class="section"><img src="bg.jpg" id="bg"></div>
+			<div class="section"><img src="bg3.jpeg" id="bg"></div>
+			<div class="section"><img src="bg4.jpeg" id="bg"></div>
+		</div> -->
+
+		<ul class="rslides">
+			<li><img src="bg7.jpeg" alt="" id="full">
+					<div class="texttt">	<h1>HELLO</h1></div>
+			</li>
+			<li><img src="bg3.jpeg" alt="" id="full"></li>
+			<li><img src="bg9.jpeg" alt="" id="full"></li>
+		</ul>
+	</div>
+	<div class="right-container">
+		<div class="right-content">
+			<div class="logo">
+				<img src="blogbook-logo.png"></img>
+				<h1>blogbook</h1>
+			</div>
+			<div class="login-form">
+				<form>
+					<div class="uk-margin">
+						<div class="uk-inline">
+							<span class="uk-form-icon" uk-icon="icon: user"></span>
+							<input class="uk-input" type="text" placeholder= "Username">
+						</div>
+					</div>
+
+					<div class="uk-margin">
+						<div class="uk-inline">
+							<span class="uk-form-icon" uk-icon="icon: lock"></span>
+							<input class="uk-input" type="password" placeholder="Password">
+						</div>
+					</div>
+				</form>
+				<a href="index.html" class="uk-link-reset">
+					<button class="uk-button uk-button-primary uk-button-small login-user-btn">Login</button>
+				</a>
+				<button class="uk-button uk-button-secondary uk-button-small login-guest-btn">Continue as Guest</button>
+				<br><button class="uk-button uk-button-secondary uk-button-small register-btn" uk-toggle="target: #regform">Register</button>
+			</div>
+
+			<div id="regform" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+					<button class="uk-modal-close-default" type="button" uk-close></button>
+					<h2 class="uk-modal-title">Register</h2>
+					<form class="uk-grid-small" uk-grid>
+						<div class="uk-width-1-2@s">
+							<input class="uk-input" type="text" placeholder="First Name">
+						</div>
+						<div class="uk-width-1-2@s">
+							<input class="uk-input" type="text" placeholder="Last Name">
+						</div>
+						<div class="uk-width-1-1">
+							<input class="uk-input" type="text" placeholder="Username">
+						</div>
+						<div class="uk-width-1-1">
+							<input class="uk-input" type="password" placeholder="Password">
+						</div>
+						<div class="uk-width-1-1">
+							<input class="uk-input" type="password" placeholder="Re-type password">
+						</div>
+						<div class="uk-width-1-1">
+							<input class="uk-input" type="text" placeholder="Email">
+						</div>
+					</form>
+					 <button class="uk-button uk-button-secondary uk-button-large submitreg-btn">Submit</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/responsiveSlider/responsiveslides.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+
+
+
+</html>
