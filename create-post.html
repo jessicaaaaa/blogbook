@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogbook</title>
+	<script src='https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=n3kt7502d6mlp9tcaffwcwrkpnm2tvijtwy2ty54niaj87fw'></script>
+	<script>
+	 tinymce.init({
+    selector: '#mytextarea',
+    menubar: false,
+    plugins: 'image imagetools advlist code media link'
+ 	 });
+ 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>	
+	<div class="top-nav">
+		<div class="content">	
+			<div class="logo">
+				<img src="blogbook-logo.png"></img>
+				<h1>blogbook</h1>
+			</div>
+			<div class="nav-links cl-effect-10">
+				<ul>
+					<a href="" data-hover="Write"><li>Write</li></a>
+					<a href=""><li>Profile</li></a>
+					<a href=""><li>Settings</li></a>
+
+				</ul>
+			</div>
+			<div class="search">
+				<div>
+					<a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+					<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+						<form class="uk-search uk-search-navbar uk-width-1-1">
+							<input class="uk-search-input" type="search" placeholder="blogs, tags, etc..." autofocus>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-wrapper">
+		<div class="main-content">	
+				<div class="create-post-container">	
+				<h2 class="uk-heading-line uk-text-center"><span>Create Post</span></h2>
+	
+        		<input class="uk-input uk-form-width-medium uk-form-large cp-title" type="text" placeholder="Title">
+        		 <textarea id="mytextarea"></textarea>
+        		<button class="uk-button uk-button-secondary create-post-btn">Create</button>
+        		</div>
+		</div>	
+	</div>
+
+			
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/responsiveSlider/responsiveslides.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/customScript.js"></script>
+
+
+
+</html>

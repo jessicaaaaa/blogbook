@@ -253,6 +253,7 @@ body{
 
 .main-wrapper{
 	background-color: #F8F9F7;
+	height: auto;
 
 }
 
@@ -309,12 +310,6 @@ body{
 	font-size: 12px
 }
 /*END OF INDEX*/
-
-
-
-
-
-
 
 
 
@@ -444,7 +439,7 @@ body{
 /*SINGLE POST*/
 
 .blog-post{
-	width: 68%;
+	width: 78%;
 	background-color: #FDFDFD;
 	padding: 30px;
 	display: inline-block;
@@ -452,7 +447,7 @@ body{
 
 .blog-post .tags{
 	width: 60%;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .post-tag{
@@ -460,13 +455,13 @@ body{
 
 }
 
-.blog-comments{
+/*.blog-comments{
 	width: 60%;
-}
+}*/
 
 .blogpost-author{
 	float: right;
-    width: 25%;
+    width: 15%;
     display: inline-block;
     position: fixed;
 }
@@ -477,7 +472,7 @@ body{
 }
 
 .about-author{
-	padding: 30px;
+	padding: 20px;
     background-color: #222;
     color: #fff;
     text-align: center;
@@ -491,5 +486,67 @@ body{
     margin-bottom: 10px;
 }
 
+.share-links{
+	margin-top: 10px;
+}
+.blog-comment{
+	display: block;
+}
+
+.post-comment-btn{
+	margin: 10px 0px;
+	float: right;
+}
+.comment-reply{
+	width: 60%;
+    padding: 20px;
+    background-color: #EFEDBE;
+    display: block;
+    float: right;
+}
+
+/*.comment-form textarea{
+	width: 100%;
+	border:none;
+}
+*/
+
+.user-comment img{
+	display:inline-block;
+}
+
+.user-comment-info{
+	display: inline-block;
+    margin-left: 10px;
+}
+
+.reply-comment{
+	padding: 15px;
+    width: 70%;
+    float: right;
+    background-color: #EFEDBE;
+}
 
 /*END OF SINGLE POST*/
+
+.create-post-container h2{
+	font-weight: 600;
+}
+
+.cp-title{
+	margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.create-post-btn{
+	font-weight: 600;
+	float: right;
+	margin: 10px 0px;
+}
+
+
+#mytextarea{
+	margin-bottom: 10px !important;
+}
