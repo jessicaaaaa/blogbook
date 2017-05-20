@@ -12,7 +12,6 @@
  	</script>
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="js/pagePiling/jquery.pagepiling.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
 	<link rel="stylesheet" href="custom.css">
 
@@ -21,28 +20,17 @@
 <body>	
 	<div class="top-nav">
 		<div class="content">	
-			
-			<a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle class="hamburger"></a>
-			<div id="offcanvas-slide" uk-offcanvas>
-				<div class="uk-offcanvas-bar nav-left">
-					<div class="uk-text-center">
-						<div class="uk-inline-clip uk-transition-toggle">
-							<img src="userpic.jpg"></img>
-							<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-							<p class="uk-h4 uk-margin-remove">
-								<button class="uk-button uk-button-primary">View Blog</button>
-							</p>
-							</div>
-						</div>
-
-						<h3><b>Hello, Jessica!</b></h3>
-						<button class="uk-button uk-button-primary newpost-btn" href="#modal-full" uk-toggle><span uk-icon="icon: plus"></span>New Post</button>
-					</div>
-				</div>
-			</div>
 			<div class="logo">
 				<img src="blogbook-logo.png"></img>
 				<h1>blogbook</h1>
+			</div>
+			<div class="nav-links cl-effect-10">
+				<ul>
+					<a href="" data-hover="Write"><li>Write</li></a>
+					<a href=""><li>Profile</li></a>
+					<a href=""><li>Settings</li></a>
+
+				</ul>
 			</div>
 			<div class="search">
 				<div>
@@ -59,12 +47,67 @@
 
 	<div class="main-wrapper">
 		<div class="main-content">	
+		<div class="blog-post">
+			<article class="uk-article">
 
-		
-			
-			
+				<h1 class="uk-article-title" style="font-weight: 600"><a class="uk-link-reset" href="">Heading</a></h1>
+				<hr class="uk-divider-small" style="margin: 10px 0px;">
 
+				<h6><span uk-icon="icon: calendar"></span> July 23, 2017 <span uk-icon="icon: clock"></span> 5:30PM</h6>
 
+				<p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</article>
+		<hr class="uk-divider-icon">
+		<div class="blog-comments">	
+			<article class="uk-comment">
+				<header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+					<div class="uk-width-auto">
+						<img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
+					</div>
+					<div class="uk-width-expand">
+						<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+						<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+							<li><a href="#">12 days ago</a></li>
+							<li><a href="#">Reply</a></li>
+						</ul>
+					</div>
+				</header>
+				<div class="uk-comment-body">
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				</div>
+				<header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+					<div class="uk-width-auto">
+						<img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
+					</div>
+					<div class="uk-width-expand">
+						<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+						<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+							<li><a href="#">12 days ago</a></li>
+							<li><a href="#">Reply</a></li>
+						</ul>
+					</div>
+				</header>
+				<div class="uk-comment-body">
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				</div>
+			</article>
+		</div>
+		</div>
+		<div class="blogpost-author">	
+		<div class="about-author">	
+		<h3>Author</h3>
+		<div class="author-pic">	
+		<img src="userpic.jpg"></img>
+		</div>
+			<h4>Jessica Gavino</h4>
+			<div class="user-location" style="display:block"><span uk-icon="icon: location"></span> MNL, Philippines</div>
+			Copy-editor, Ninja Writer and wine-drinker. Reader and beach-walker. I used to live in Hong Kong and London but I’m now at home in the North East of England.
+		</div>		
+
+		</div>
 		</div>
 	</div>
 </body>

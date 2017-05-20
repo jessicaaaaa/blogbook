@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Blogbook</title>
-	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+	<script src='https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=n3kt7502d6mlp9tcaffwcwrkpnm2tvijtwy2ty54niaj87fw'></script>
 	<script>
 	 tinymce.init({
     selector: '#mytextarea',
@@ -12,7 +12,6 @@
  	</script>
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="js/pagePiling/jquery.pagepiling.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
 	<link rel="stylesheet" href="custom.css">
 
@@ -21,28 +20,17 @@
 <body>	
 	<div class="top-nav">
 		<div class="content">	
-			
-			<a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle class="hamburger"></a>
-			<div id="offcanvas-slide" uk-offcanvas>
-				<div class="uk-offcanvas-bar nav-left">
-					<div class="uk-text-center">
-						<div class="uk-inline-clip uk-transition-toggle">
-							<img src="userpic.jpg"></img>
-							<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-							<p class="uk-h4 uk-margin-remove">
-								<button class="uk-button uk-button-primary">View Blog</button>
-							</p>
-							</div>
-						</div>
-
-						<h3><b>Hello, Jessica!</b></h3>
-						<button class="uk-button uk-button-primary newpost-btn" href="#modal-full" uk-toggle><span uk-icon="icon: plus"></span>New Post</button>
-					</div>
-				</div>
-			</div>
 			<div class="logo">
 				<img src="blogbook-logo.png"></img>
 				<h1>blogbook</h1>
+			</div>
+			<div class="nav-links cl-effect-10">
+				<ul>
+					<a href="" data-hover="Write"><li>Write</li></a>
+					<a href=""><li>Profile</li></a>
+					<a href=""><li>Settings</li></a>
+
+				</ul>
 			</div>
 			<div class="search">
 				<div>
@@ -93,7 +81,9 @@
 <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" style="margin-left: 1px;" uk-grid>
 <div class="uk-card uk-card-default uk-card-body post-body">
     <h3 class="uk-card-title post-title">This is a sample of a long header. Is there enough space?</h3>
-    <p class="post-par truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<!--     <div class="post-img"><img src="bg4.jpeg"></div> -->
+    <div class="post-par truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <a class="uk-button uk-button-default read-more" href="#">Read more</a>
 </div>
 <div class="uk-card uk-card-default uk-card-body">
     <h3 class="uk-card-title">Default</h3>
@@ -118,6 +108,7 @@
   </form>
     </div>
 </div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/responsiveSlider/responsiveslides.min.js"></script>
 <script src="js/jquery.js"></script>
