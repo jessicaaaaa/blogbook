@@ -493,7 +493,7 @@ body{
 	display: block;
 }
 
-.post-comment-btn{
+.post-comment-btn, .replycomment-btn1, .replycomment-btn2{
 	margin: 10px 0px;
 	float: right;
 }
@@ -546,7 +546,11 @@ body{
 	margin: 10px 0px;
 }
 
-
 #mytextarea{
 	margin-bottom: 10px !important;
+}
+
+.replycomment-container1, .replycomment-container2{
+	display:none;
+	margin-top: 10px;
 }

@@ -2,14 +2,6 @@
 <html>
 <head>
 	<title>Blogbook</title>
-	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
-	<script>
-	 tinymce.init({
-    selector: '#mytextarea',
-    menubar: false,
-    plugins: 'image'
- 	 });
- 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/uikit.min.css" />
@@ -19,17 +11,16 @@
 </head>
 <body>	
 	<div class="top-nav">
-		<div class="content">	
+		<div class="content">
 			<div class="logo">
-				<img src="blogbook-logo.png"></img>
+				<img src="blogbook-logo.png">
 				<h1>blogbook</h1>
 			</div>
 			<div class="nav-links cl-effect-10">
 				<ul>
-					<a href="" data-hover="Write"><li>Write</li></a>
+					<a href=""><li>Write</li></a>
 					<a href=""><li>Profile</li></a>
 					<a href=""><li>Settings</li></a>
-
 				</ul>
 			</div>
 			<div class="search">
@@ -43,101 +34,109 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="main-wrapper">
-		<div class="main-content">	
-		<div class="blog-post">
-			<article class="uk-article">
+		<div class="main-content">
+			<div class="blog-post">
+				<article class="uk-article">
 
-				<h1 class="uk-article-title" style="font-weight: 600"><a class="uk-link-reset" href="">The reason you answer work email on the weekend is actually 500 years old</a></h1>
-				<hr class="uk-divider-small" style="margin: 10px 0px;">
+					<h1 class="uk-article-title" style="font-weight: 600"><a class="uk-link-reset" href="">The reason you answer work email on the weekend is actually 500 years old</a></h1>
+					<hr class="uk-divider-small" style="margin: 10px 0px;">
 
-				<h6><span uk-icon="icon: calendar"></span> July 23, 2017 <span uk-icon="icon: clock"></span> 5:30PM</h6>
+					<h6><span uk-icon="icon: calendar"></span> July 23, 2017 <span uk-icon="icon: clock"></span> 5:30PM</h6>
 
-				<p class="uk-text-lead">At one point in Western history, time suddenly became a lot more valuable — and it’s Britain’s fault.</p>
+					<p class="uk-text-lead">At one point in Western history, time suddenly became a lot more valuable — and it’s Britain’s fault.</p>
 
-				<p>Before Britain invented the mercantile system in the 15th century, the management and appraisal of time was on a much more personal scale. The agrarian economy meant small towns exchanged goods and services in sync with the seasons and were subject to the limitations of hyperlocal resources. Time and productivity ebbed and flowed according to a natural rhythm.</p>
+					<p>Before Britain invented the mercantile system in the 15th century, the management and appraisal of time was on a much more personal scale. The agrarian economy meant small towns exchanged goods and services in sync with the seasons and were subject to the limitations of hyperlocal resources. Time and productivity ebbed and flowed according to a natural rhythm.</p>
 
-			</article>
-
-			<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
-<a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
-
-		<div class="tags">	
-
-		<span class="uk-label post-tag">Default</span>
-		<span class="uk-label post-tag">Default</span>
-		<span class="uk-label post-tag">Default</span>
-		<span class="uk-label post-tag">Default</span>
-		<span class="uk-label post-tag">Default</span>
-
-		</div>
-		<hr class="uk-divider-icon">
-		<div class="blog-comments">	
-			<article class="uk-comment">
-				<header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-					<div class="uk-width-auto">
-						<img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
-					</div>
-					<div class="uk-width-expand">
-						<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-						<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-							<li><a href="#">12 days ago</a></li>
-							<li><a href="#">Reply</a></li>
-						</ul>
-					</div>
-				</header>
-				<div class="uk-comment-body">
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				</article>
+				<div class="share-links">
+					<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+					<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+					<a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
 				</div>
-				<header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-					<div class="uk-width-auto">
-						<img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
-					</div>
-					<div class="uk-width-expand">
-						<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-						<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-							<li><a href="#">12 days ago</a></li>
-							<li><a href="#">Reply</a></li>
-						</ul>
-					</div>
-				</header>
-				<div class="uk-comment-body">
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				<div class="tags">	
+					<span class="uk-label post-tag">Tag1</span>
+					<span class="uk-label post-tag">Tag2</span>
+					<span class="uk-label post-tag">Tag3</span>
+					<span class="uk-label post-tag">Tag4</span>
+					<span class="uk-label post-tag">Tag5</span>
 				</div>
-			</article>
-		</div>
-		</div>
-		<div class="blogpost-author">	
-		<div class="about-author">	
-		<h3>Author</h3>
-		<div class="author-pic">	
-		<img src="userpic.jpg"></img>
-		</div>
-			<h4>Jessica Gavino</h4>
-			<div class="user-location" style="display:block"><span uk-icon="icon: location"></span> MNL, Philippines</div>
-			Copy-editor, Ninja Writer and wine-drinker. Reader and beach-walker. I used to live in Hong Kong and London but I’m now at home in the North East of England.
-		</div>		
-
-		</div>
+				<hr class="uk-divider-icon">
+				<div class="blog-comments">	
+					<div class="comment-form">	
+						<div class="uk-margin">
+							<textarea class="uk-textarea" rows="5" placeholder="Post your comments here... "></textarea>
+							<button class="uk-button uk-button-secondary post-comment-btn">Post</button>
+						</div>
+						<!-- x -->
+					</div>	
+					<div style="clear:both"></div>
+					<div class="user-comment">	
+						<div class="user-comment-body">	
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+							</div>
+							<img src="userpic.jpg" width="80" height="80">
+							<div class="user-comment-info uk-text-middle">	
+								<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+								<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+									<li><a href="#">12 days ago</a></li>
+									<li><a href="#" class="reply-btn1">Reply</a></li>
+								</ul>
+							</div>
+							<div class="replycomment-container1">
+								<textarea class="uk-textarea" rows="3" placeholder="Reply here..."></textarea>
+								<button class="uk-button uk-button-secondary replycomment-btn1">Reply</button>
+							</div>
+						</div>	
+						<div style="clear:both"></div>
+						<div class="user-comment reply-comment">	
+							<div class="user-comment-body">	
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+								</div>
+								<img src="userpic.jpg" width="80" height="80">
+								<div class="user-comment-info uk-text-middle">	
+									<h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+									<ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+										<li><a href="#">12 days ago</a></li>
+										<li><a href="#" class="reply-btn2">Reply</a></li>
+									</ul>
+								</div>
+								<div class="replycomment-container2">
+								<textarea class="uk-textarea" rows="3" placeholder="Reply here..."></textarea>
+								<button class="uk-button uk-button-secondary replycomment-btn2">Reply</button>
+								</div>
+						</div>	
+						<div style="clear:both"></div>
+				</div>
+			</div>
+			<div class="blogpost-author">
+					<div class="about-author">
+						<div class="author-pic">	
+							<img src="userpic.jpg"></img>
+						</div>
+						<h4>Jessica Gavino</h4>
+						<div class="user-location" style="display:block"><span uk-icon="icon: location"></span> MNL, Philippines</div>
+						Copy-editor, Ninja Writer and wine-drinker. Reader and beach-walker. I used to live in Hong Kong and London but I’m now at home in the North East of England.
+					</div>
+				</div>
 		</div>
 	</div>
 </body>
-<div id="modal-full" class="uk-modal-container" uk-modal bg-close:false>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Create Post</h2>
-      
-        <form method="post">
-        <input class="uk-input" type="text" placeholder="Title">
-    <textarea id="mytextarea">Hello, World!</textarea>
-  </form>
-    </div>
-</div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/responsiveSlider/responsiveslides.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
