@@ -156,7 +156,31 @@ body{
 
 
 /*START OF INDEX*/
+.blog-grid{
+	margin-top: 20px;
+}
 
+.tag-board{
+	padding: 5px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.tag-chips{
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 600;
+	background: #1e87f0 !important;
+	color: #fff !important;
+	margin: 5px 5px;
+}
+
+.tag-title{
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 .user-panel{
 	color: #F1F2EE;
 	background-color: #222;
@@ -282,11 +306,11 @@ body{
 }
 
 .post-author img{
-	width: 15%;
-	height: 15%;
-	border-radius: 10%;
+	width: 25px;
+	height: 25px;
 
 }
+
 
 .post-divider{
 	margin: 0px;
@@ -295,6 +319,19 @@ body{
 .post-details{
 	display: inline-block;
     vertical-align: middle;
+}
+
+.post-details h6{
+	display:inline;
+}
+.post-details a{
+	color: #333;
+}
+.post-details a:hover{
+	text-decoration: none;
+	color: #EAE151;
+	border-top: 1px solid #333;
+	
 }
 
 .post-content p{
@@ -344,6 +381,7 @@ body{
 
 .profile-container{
 	padding: 30px;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .profilepic{
